@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "426827088873",
+    "project_id": "collge-dost",
+    "storage_bucket": "collge-dost.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426827088873:android:660095133ba047e59a4178",
+        "android_client_info": {
+          "package_name": "com.college_dost.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOIaSnimsEkx5FZiDLMCypR-kncAEobj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
