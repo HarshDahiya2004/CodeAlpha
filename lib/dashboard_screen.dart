@@ -2,6 +2,8 @@ import 'package:college_dost/notification_screen.dart';
 import 'package:flutter/material.dart';
 import 'home_2.dart';
 import 'event_screen.dart';
+import 'Setting_Screen.dart';
+
 //import 'home_screen.dart';
 
 class Dashboard extends StatefulWidget {
@@ -21,7 +23,7 @@ class _DashboardState extends State<Dashboard> {
     HomeScreen(),
     EventScreen(),
     NotificationScreen(),
-    //SettingsPage(),
+    SettingScreen(),
   ];
 
   @override
@@ -64,6 +66,7 @@ class DashboardCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      // ignore: deprecated_member_use
       color: color.withOpacity(1),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Center(
@@ -79,45 +82,3 @@ class DashboardCard extends StatelessWidget {
     );
   }
 }
-
-// class EventsPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text('Events Dashboard'),
-//         backgroundColor: Colors.purple,
-//       ),
-//       body: Padding(
-//         padding: const EdgeInsets.all(16.0),
-//         child: GridView.count(
-//           crossAxisCount: 2,
-//           crossAxisSpacing: 16,
-//           mainAxisSpacing: 16,
-//           children: [
-//             DashboardCard(
-//               icon: Icons.event_available,
-//               label: 'Annual Day',
-//               color: Colors.deepPurple,
-//             ),
-//             DashboardCard(
-//               icon: Icons.sports_basketball,
-//               label: 'Sports Meet',
-//               color: Colors.pink,
-//             ),
-//             DashboardCard(
-//               icon: Icons.school,
-//               label: 'Seminars',
-//               color: Colors.teal,
-//             ),
-//             DashboardCard(
-//               icon: Icons.theater_comedy,
-//               label: 'Fests',
-//               color: Colors.indigo,
-//             ),
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }

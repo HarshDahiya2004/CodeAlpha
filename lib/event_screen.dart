@@ -14,7 +14,7 @@ class EventScreen extends StatelessWidget {
           backgroundColor: Colors.blue.shade400,
           toolbarHeight: 70,
         ),
-        backgroundColor: Colors.white,
+        // backgroundColor: Colors.white,
         body: SafeArea(
           child: Column(
             children: [
@@ -73,7 +73,7 @@ class EventListTab extends StatelessWidget {
       'title': 'Mid-Term Examinations',
       'department': 'Mathematics',
       'date': 'Fri 16 Nov, 9:00 AM',
-      // 'color': '0xFFD7F7DD',
+      'color': '0xFFD7F7DD',
       'type': 'Exams',
     },
     {
@@ -112,6 +112,7 @@ class EventListTab extends StatelessWidget {
             color: Color(int.parse(event['color']!)),
             boxShadow: [
               BoxShadow(
+                // ignore: deprecated_member_use
                 color: Colors.grey.withOpacity(0.1),
                 blurRadius: 6,
                 offset: Offset(0, 4),

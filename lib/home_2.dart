@@ -1,5 +1,6 @@
 import 'package:college_dost/event_screen.dart';
 import 'package:college_dost/notification_screen.dart';
+import 'package:college_dost/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -29,7 +30,7 @@ class HomeScreen extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => NotificationScreen()),
+              MaterialPageRoute(builder: (context) => ProfileScreen()),
             );
           },
           icon: Icon(Icons.person),
@@ -71,7 +72,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
 
-      backgroundColor: Colors.grey[100],
+      //  backgroundColor: Colors.grey[100],
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
